@@ -1,0 +1,12 @@
+# Dir
+.idea
+./backend/node_modules
+./frontend/node_modules
+
+# Git
+.git
+.gitignore
+
+# Docker
+Dockerfile*
+docker-compose*.yml

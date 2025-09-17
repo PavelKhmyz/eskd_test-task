@@ -1,0 +1,28 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node-dev src/index.ts",
+    "build": "tsc && tsc-alias",
+    "start": "node src/index.ts",
+    "migrate": "node-pg-migrate -m migrations"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "express": "^5.1.0",
+    "pg": "^8.16.3",
+    "zod": "^4.1.9"
+  },
+  "devDependencies": {
+    "node-pg-migrate": "^8.0.3",
+    "typescript": "^5.9.2",
+    "tsc-alias": "^1.8.16",
+    "@types/express": "^5.0.3",
+    "@types/pg": "^8.15.5"
+  }
+}
