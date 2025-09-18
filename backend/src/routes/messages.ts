@@ -7,9 +7,9 @@ import { asyncHandler } from '@utils/asyncHandler.js';
 const router = Router();
 
 const messageSchema = z.object({
-  name: z.string().min(1),
+  name: z.string().min(2),
   phone: z.string().min(11).max(13),
-  message: z.string().min(1)
+  message: z.string().min(2)
 });
 
 router.post('/', validate(messageSchema), asyncHandler(async (req, res) => {

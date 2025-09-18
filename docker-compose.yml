@@ -10,6 +10,13 @@ services:
     depends_on:
       - db
 
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:3000"
+    env_file:
+      - ./frontend/.env
+
   db:
     image: postgres:15
     restart: always
